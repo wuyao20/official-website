@@ -4,15 +4,15 @@
     <!-- 头部顶部 -->
     <div class="header-top container-fuild hidden-xs">
       <div class="container">
+        <iframe src="http://m.weather.com.cn/m/pn3/weather.htm?id=101190801T" marginwidth="0" marginheight="0" hspace="0" vspace="0" allowtransparency="true" scrolling="no" width="225" height="20" frameborder="0"></iframe>
         <div class="server pull-left">
-          <span class="glyphicon glyphicon-earphone"></span>888-888-888
-          <span class="glyphicon glyphicon-envelope"></span>liyunkun_11@163.com
-          <span class="glyphicon glyphicon-time"></span>7x24小时为您服务
+          <!--<span class="glyphicon glyphicon-earphone"></span>888-888-888-->
+          <!--<span class="glyphicon glyphicon-envelope"></span>liyunkun_11@163.com-->
         </div>
-        <div class="shejiao pull-right">
-          <span class="glyphicon glyphicon-hand-right"></span>赶快联系我们吧！
-          <span class="glyphicon glyphicon-hand-left"></span>
-        </div>
+        <!--<div class="shejiao pull-right">-->
+          <!--<span class="glyphicon glyphicon-hand-right"></span>赶快联系我们吧！-->
+          <!--<span class="glyphicon glyphicon-hand-left"></span>-->
+        <!--</div>-->
       </div>
     </div>
     <!-- 电脑导航 -->
@@ -29,25 +29,25 @@
           :class="index==navIndex?'active':''"
           @click="navClick(index,item.name)"
         >
-          <router-link :to="item.path">
+          <router-link to="item.path">
             {{item.name}}
             <span v-if="item.children.length>0" class="glyphicon glyphicon-menu-down"></span>
             <i class="underline"></i>
           </router-link>
           <dl v-if="item.children.length>0">
             <dt v-for="(i,n) in item.children" :key="n">
-              <router-link :to="i.path">{{i.name}}</router-link>
+              <router-link :to="i.path"><span style="color: #000000">{{i.name}}</span></router-link>
             </dt>
           </dl>
         </li>
       </ul>
     </div>
     <!-- 手机导航 -->
-    <div class="header-nav-m container-fuild visible-xs">
+    <!--<div class="header-nav-m container-fuild visible-xs">
       <div class="header-nav-m-logo">
         <img class="center-block" src="@/assets/img/logo_black.png" alt="logo">
       </div>
-      <!-- 导航栏 -->
+      &lt;!&ndash; 导航栏 &ndash;&gt;
       <div class="header-nav-m-menu text-center">
         {{menuName}}
         <div
@@ -58,7 +58,7 @@
         >
           <span :class="menuClass"></span>
         </div>
-        <!-- 导航内容 -->
+        &lt;!&ndash; 导航内容 &ndash;&gt;
         <ul id="menu" class="header-nav-m-wrapper collapse">
           <li
             v-for="(item,index) in navList"
@@ -75,7 +75,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div>-->
   </div>
 </template>
 <script>
@@ -93,45 +93,72 @@ export default {
           children: []
         },
         {
-          name: "软件产品",
+          name: "重要信息",
           path: "/software",
           children: [
             {
-              name: "智能小镇管理系统",
+              name: "文件",
               path: "/software/smartTown"
             },
             {
-              name: "大数据管理系统",
+              name: "领导讲话",
               path: "/software/bigData"
             }
           ]
         },
         {
-          name: "相关服务",
+          name: "工作动态",
           path: "/service",
           children: []
         },
         {
-          name: "新闻动态",
+          name: "专题活动",
           path: "/newsinformation",
           children: []
         },
         {
-          name: "公司介绍",
+          name: "五老风采",
           path: "/companyintroduction",
           children: []
         },
         {
-          name: "工作机会",
+          name: "关爱行动",
           path: "/jobchance",
           children: []
         },
         {
-          name: "联系我们",
+          name: "典型经验",
           path: "/contactus",
           children: []
+        },
+        {
+          name: "基层关工",
+          path: "/contactus",
+          children: []
+        },
+        {
+          name: "关于我们",
+          path: "/contactus",
+          children: [
+            {
+              name: "工委简介",
+              path: "/software/smartTown"
+            },
+            {
+              name: "组织机构",
+              path: "/software/bigData"
+            },
+            {
+              name: "大事记",
+              path: "/software/bigData"
+            },
+            {
+              name: "联系方式",
+              path: "/software/bigData"
+            }
+          ]
         }
-      ]
+      ],
     };
   },
   methods: {
@@ -157,11 +184,11 @@ export default {
   transition: all ease 0.6s;
 }
 #header .header-top {
-  height: 50px;
+  height: 40px;
   color: #fff;
   font-size: 12px;
   line-height: 50px;
-  background: #474747;
+  background: red;
 }
 /* 顶部的图标 */
 #header .header-top span {
@@ -175,8 +202,9 @@ export default {
 #header .header-nav .header-nav-logo {
   width: 100px;
   height: 100%;
-  float: left;
   position: relative;
+  display: inline-block;
+  margin-left: 30px;
 }
 /* 导航栏logo图片 */
 #header .header-nav .header-nav-logo img {
@@ -196,8 +224,8 @@ export default {
 #header .header-nav .header-nav-wrapper {
   line-height: 110px;
   float: right;
-  margin: 0;
-  max-width: 800px;
+  margin-right: 30px;
+  max-width: 1000px;
 }
 /* 导航栏 每个导航 */
 #header .header-nav .header-nav-wrapper > li {
@@ -223,7 +251,7 @@ export default {
   height: 2px;
   opacity: 0;
   transition: all 0.6s ease;
-  background-color: #1e73be;
+  /*background-color: #1e73be;*/
 }
 /* 导航栏 每个导航下面的 a 链接的右侧小三角 */
 #header .header-nav .header-nav-wrapper > li > a > span {
@@ -232,7 +260,7 @@ export default {
 }
 /* 导航栏 每个导航下面的 a 链接 鼠标滑上去的样式 */
 #header .header-nav .header-nav-wrapper > li > a:hover {
-  color: #1e73be;
+  color: red;
   text-decoration: none;
 }
 /* 导航栏 每个导航下面的 a 链接 鼠标滑上去下划线的样式 */
@@ -240,6 +268,7 @@ export default {
   opacity: 1;
   width: 100%;
   left: 0;
+  border-bottom: 2px solid red;
 }
 /* 导航栏 每个导航下面的 a 链接 鼠标滑上去三角标的样式 */
 #header .header-nav .header-nav-wrapper > li > a:hover span {
@@ -247,9 +276,9 @@ export default {
 }
 /* 导航栏 每个导航下面的 a 链接 鼠标点击后的样式 */
 #header .header-nav .header-nav-wrapper > li.active > a {
-  color: #1e73be;
+  color: red;
   text-decoration: none;
-  border-bottom: 2px solid #1e73be;
+  border-bottom: 2px solid red;
 }
 /* 导航栏 每个导航下面的二级导航容器 */
 #header .header-nav .header-nav-wrapper > li > dl {

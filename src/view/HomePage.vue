@@ -25,22 +25,22 @@
     <div id="bigData" class="container-fuild">
       <div class="row bigData-container">
         <div class="col-xs-12 col-sm-12 col-md-6 wow zoomIn">
-          <img class="img-responsive" src="@/assets/img/img1.png" alt="大数据管理系统">
+          <img class="img-responsive" src="@/assets/img/boy.jpg" alt="徐州好少年">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6">
           <h2 class="bigData-title">
-            大数据管理系统
+            徐州好少年
             <small>/ Big Data Management System</small>
           </h2>
           <p>当今最领先的响应式自助建站平台。无论您是普通互联网用户，还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。想创建一个简单的单页式站点，还是一个专业的公司网站，亦或是一个别具一格的博客？起飞页可以满足您的所有需求。</p>
           <p>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户，还是专业网站制作人员。</p>
           <h2 class="bigData-device">PC/PAD/Phone &nbsp; 全设备支持</h2>
-          <a href="#" class="btn btn-lg btn-block btn-info">联系我们</a>
+          <!--<a href="#" class="btn btn-lg btn-block btn-info">联系我们</a>-->
         </div>
       </div>
     </div>
     <!-- 您身边的IT专家 -->
-    <div id="contactUs" class="container-fuild text-center">
+    <!--<div id="contactUs" class="container-fuild text-center">
       <div class="container contactUs-container wow slideInUp">
         <h1>您身边的IT专家</h1>
         <h3>7x24小时提供出色的IT服务</h3>
@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-    <!-- 客户评价 -->
+    &lt;!&ndash; 客户评价 &ndash;&gt;
     <div id="customer" class="container-fuild">
       <div class="container customer-container">
         <p class="customer-title text-center">客户评价</p>
@@ -79,7 +79,7 @@
               <div class="customer-content2">{{item.title}}</div>
             </div>
           </div>
-          <!-- 如果需要导航按钮 -->
+          &lt;!&ndash; 如果需要导航按钮 &ndash;&gt;
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
@@ -101,7 +101,7 @@
         </div>
       </div>
     </div>
-    <!-- 为什么选择我们 -->
+    &lt;!&ndash; 为什么选择我们 &ndash;&gt;
     <div id="whyChooseUs" class="conatiner-fuild">
       <div class="container">
         <div class="whyChooseUs-title text-center">
@@ -131,7 +131,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
   </div>
 </template>
 <script>
@@ -145,25 +145,25 @@ export default {
         {
           img: require("@/assets/img/banner1.png"),
           path: "",
-          title: '您身边的IT专家1',
+          title: '徐州市关心下一代委员会',
           content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
         },
         {
           img: require("@/assets/img/banner2.jpg"),
           path: "",
-          title: '您身边的IT专家2',
+          title: '徐州市关心下一代委员会',
           content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
         },
         {
-          img: require("@/assets/img/banner1.png"),
+          img: require("@/assets/img/banner3.jpg"),
           path: "",
-          title: '您身边的IT专家3',
+          title: '徐州市关心下一代委员会',
           content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
         },
         {
-          img: require("@/assets/img/banner2.jpg"),
+          img: require("@/assets/img/banner4.jpg"),
           path: "",
-          title: '您身边的IT专家4',
+          title: '徐州市关心下一代委员会',
           content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
         }
       ],

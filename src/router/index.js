@@ -21,7 +21,7 @@ export default new Router({
           name: 'home',
           component: resolve => require(['@/view/HomePage'], resolve),
           meta: {
-            title: '首页'
+            title: '徐州市关心下一代委员会'
           }
         }, {
           path: '/software',
