@@ -28,8 +28,9 @@ import './assets/js/bootstrap.min'
 /* animate.css */
 import 'animate.css'
 
- 
+
 /* 头部组件 */
+// 全局注册组件
 import Header from './components/Header'
 Vue.component(Header.name,Header)
 
@@ -58,4 +59,5 @@ new Vue({
   router,
   components: { App },
   template: '<App/>'
+  // render: h => h(App)
 })

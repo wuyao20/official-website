@@ -3,6 +3,9 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 export default new Router({
+  scrollBehavior (to, from, savedPosition) {
+    return {x:0, y:0}
+  },
   routes: [
     {
       path: '*',
@@ -16,14 +19,16 @@ export default new Router({
         {
           path: '/',
           redirect: '/home'
-        }, {
+        },
+        {
           path: '/home',
           name: 'home',
           component: resolve => require(['@/view/HomePage'], resolve),
           meta: {
             title: '徐州市关心下一代委员会'
           }
-        }, {
+        },
+        {
           path: '/software',
           name: 'software',
           component: resolve => require(['@/view/Software'], resolve),
@@ -52,35 +57,40 @@ export default new Router({
               }
             }
           ]
-        }, {
+        },
+        {
           path: '/service',
           name: 'service',
           component: resolve => require(['@/view/Service'], resolve),
           meta: {
             title: '相关服务'
           }
-        }, {
+        },
+        {
           path: '/newsinformation',
           name: 'newsinformation',
           component: resolve => require(['@/view/NewsInformation'], resolve),
           meta: {
             title: '新闻动态'
           }
-        }, {
+        },
+        {
           path: '/companyintroduction',
           name: 'companyintroduction',
           component: resolve => require(['@/view/CompanyIntroduction'], resolve),
           meta: {
             title: '公司介绍'
           }
-        }, {
+        },
+        {
           path: '/jobchance',
           name: 'jobchance',
           component: resolve => require(['@/view/JobChance'], resolve),
           meta: {
             title: '工作机会'
           }
-        }, {
+        },
+        {
           path: '/contactus',
           name: 'contactus',
           component: resolve => require(['@/view/ContactUs'], resolve),
@@ -94,6 +104,14 @@ export default new Router({
           component: resolve => require(['@/view/ServiceDetail'],resolve),
           meta: {
             title: '相关服务'
+          }
+        },
+        {
+          path: '/item',
+          name: '具体明细',
+          component: () => import('@/view/item'),
+          meta: {
+            title: '具体明细'
           }
         }
       ]

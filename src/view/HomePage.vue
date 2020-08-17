@@ -27,20 +27,77 @@
         <div class="col-xs-12 col-sm-12 col-md-6 wow zoomIn">
           <img class="img-responsive" src="@/assets/img/boy.jpg" alt="徐州好少年">
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6">
-          <h2 class="bigData-title">
+        <div class="col-xs-12 col-sm-12 col-md-6 wrapper">
+          <h2 class="bigData-title" style="color: red">
             徐州好少年
-            <small>/ Big Data Management System</small>
+            <small style="color: #F2D1A2">/XuZhou Juvenile</small>
+            <a><small style="color: red">更多</small></a>
           </h2>
-          <p>当今最领先的响应式自助建站平台。无论您是普通互联网用户，还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。想创建一个简单的单页式站点，还是一个专业的公司网站，亦或是一个别具一格的博客？起飞页可以满足您的所有需求。</p>
-          <p>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户，还是专业网站制作人员。</p>
-          <h2 class="bigData-device">PC/PAD/Phone &nbsp; 全设备支持</h2>
-          <!--<a href="#" class="btn btn-lg btn-block btn-info">联系我们</a>-->
+          <ul class="content">
+              <li>
+                <router-link to="/item">
+                  ·<a title="滨湖区关工委开展吴成革命传统教育基地引入VR技术调研">
+                  滨湖区关工委开展吴成革命传统教育基地引入VR技术
+                  </a>
+                  <span>08-14</span>
+                </router-link>
+              </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="山北街道关工委召开上半年工作总结暨下半年工作部署会">山北街道关工委召开上半年工作总结暨下半年工作部 </a><span>08-13</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="徐霞客镇举行“我心中的英雄”老少同台演讲比赛">徐霞客镇举行“我心中的英雄”老少同台演讲比赛</a><span>08-13</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+              ·<a title="宜兴市“弘扬抗疫精神，立志成才报国”主题教育活动集锦（四）">宜兴市“弘扬抗疫精神，立志成才报国”主题教育活 </a><span>08-12</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="一堂难忘的德育微课">一堂难忘的德育微课</a><span>08-12</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+              ·<a title="暑期显内涵  铜牌诉真情——胡埭关工人连续十年助学“定远娃”">暑期显内涵  铜牌诉真情——胡埭关工人连续十年助 </a><span>08-11</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+              ·<a title="学戏之经典   扬国之瑰宝——澄江街道革新社区校外辅导站弘扬中国戏曲文化精粹系列活动">学戏之经典   扬国之瑰宝——澄江街道革新社区校 </a><span>08-11</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+              ·<a title="传承红色革命基因 弘扬抗美援朝精神">传承红色革命基因 弘扬抗美援朝精神</a><span>08-10</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+              ·<a title="宜兴市“弘扬抗疫精神，立志成才报国”主题教育活动集锦（三）">宜兴市“弘扬抗疫精神，立志成才报国”主题教育活 </a><span>08-10</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+              ·<a title="工匠与画">工匠与画</a><span>08-06</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+              ·<a title="新吴区关工委吹响建强校外教育辅导站集结号">新吴区关工委吹响建强校外教育辅导站集结号</a><span>08-06</span>
+              </router-link>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- 您身边的IT专家 -->
-    <!--<div id="contactUs" class="container-fuild text-center">
+     <!--您身边的IT专家 -->
+    <div id="contactUs" class="container-fuild text-center">
       <div class="container contactUs-container wow slideInUp">
         <h1>您身边的IT专家</h1>
         <h3>7x24小时提供出色的IT服务</h3>
@@ -56,7 +113,7 @@
         </div>
       </div>
     </div>
-    &lt;!&ndash; 客户评价 &ndash;&gt;
+    <!--客户评价 -->
     <div id="customer" class="container-fuild">
       <div class="container customer-container">
         <p class="customer-title text-center">客户评价</p>
@@ -79,7 +136,7 @@
               <div class="customer-content2">{{item.title}}</div>
             </div>
           </div>
-          &lt;!&ndash; 如果需要导航按钮 &ndash;&gt;
+           如果需要导航按钮
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
@@ -101,7 +158,7 @@
         </div>
       </div>
     </div>
-    &lt;!&ndash; 为什么选择我们 &ndash;&gt;
+     <!--为什么选择我们 -->
     <div id="whyChooseUs" class="conatiner-fuild">
       <div class="container">
         <div class="whyChooseUs-title text-center">
@@ -131,7 +188,7 @@
           </div>
         </div>
       </div>
-    </div>-->
+    </div>
   </div>
 </template>
 <script>
@@ -336,6 +393,45 @@ export default {
 };
 </script>
 <style scoped>
+#bigData .wrapper{
+}
+ui {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+ul , li {
+  list-style: none;
+  margin-top: 8px;
+  color: #000;
+  font-size: medium;
+}
+ul li a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: red;
+}
+ul li a:link, a:visited {
+  text-decoration: none;
+  color: #4C4C4C;
+}
+.bigData-title > a  {
+  font-size: 15px;
+  margin-top: 15px;
+  float: right;
+  font-weight: 700;
+}
+li span {
+  margin-left: 5px;
+  float: right;
+}
+.bigData-title > a:hover {
+  cursor: pointer;
+}
 /* 整体盒子 */
 #HomePage {
   width: 100%;
@@ -387,6 +483,7 @@ export default {
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
+
 #bigData p {
   font-size: 14px;
   color: #333;
