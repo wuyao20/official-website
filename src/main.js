@@ -27,8 +27,9 @@ import './assets/js/bootstrap.min'
 
 /* animate.css */
 import 'animate.css'
-
-
+import 'element-ui/lib/theme-chalk/index.css'
+import ElementUI from 'element-ui'
+Vue.use(ElementUI, { size: 'small', zIndex: 3000 })
 /* 头部组件 */
 // 全局注册组件
 import Header from './components/Header'

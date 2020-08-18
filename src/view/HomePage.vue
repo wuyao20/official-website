@@ -22,16 +22,19 @@
       </div>
     </div>
     <!-- 大数据管理系统 -->
-    <div id="bigData" class="container-fuild">
+    <div class="container-fuild sub-container">
       <div class="row bigData-container">
         <div class="col-xs-12 col-sm-12 col-md-6 wow zoomIn" style="margin-top: 1%;">
           <img class="img-responsive" src="@/assets/img/boy.jpg" alt="徐州好少年">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 wrapper">
           <h2 class="bigData-title" style="color: red">
+            <span style="display: inline-block;vertical-align: top;">
+              <img src="@/assets/img/icon1.gif" />
+            </span>
             徐州好少年
             <small style="color: #F2D1A2">/XuZhou Juvenile</small>
-            <a><small style="color: red">更多</small></a>
+            <a class="small text-justify">更多</a>
           </h2>
           <ul class="content">
               <li>
@@ -96,7 +99,324 @@
         </div>
       </div>
     </div>
-     <!--您身边的IT专家 -->
+    <!--中间分割轮播图-->
+    <div class="middle-swiper container-fuild">
+      <div class="swiper-container banner-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" v-for="(item,index) in sliderList" :key="index">
+            <img class="swiper-lazy" :data-src="item.img" alt="轮播图">
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--校外教育示范点-->
+    <div class="container-fluid sub-container">
+      <div class="row">
+        <div class="col-md-6 wrapper">
+          <h2 class="title">
+            <span style="display: inline-block;vertical-align: top;">
+              <img src="@/assets/img/icon2.gif" />
+            </span>
+            校外教育示范点
+            <small style="color: #F2D1A2">/XuZhou Juvenile</small>
+            <a class="small text-justify">更多</a>
+          </h2>
+          <ul class="content">
+            <li>
+              <router-link to="/item">
+                ·<a title="滨湖区关工委开展吴成革命传统教育基地引入VR技术调研">
+                滨湖区关工委开展吴成革命传统教育基地引入VR技术
+              </a>
+                <span>08-14</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="山北街道关工委召开上半年工作总结暨下半年工作部署会">山北街道关工委召开上半年工作总结暨下半年工作部 </a><span>08-13</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="徐霞客镇举行“我心中的英雄”老少同台演讲比赛">徐霞客镇举行“我心中的英雄”老少同台演讲比赛</a><span>08-13</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="宜兴市“弘扬抗疫精神，立志成才报国”主题教育活动集锦（四）">宜兴市“弘扬抗疫精神，立志成才报国”主题教育活 </a><span>08-12</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="一堂难忘的德育微课">一堂难忘的德育微课</a><span>08-12</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="暑期显内涵  铜牌诉真情——胡埭关工人连续十年助学“定远娃”">暑期显内涵  铜牌诉真情——胡埭关工人连续十年助 </a><span>08-11</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="学戏之经典   扬国之瑰宝——澄江街道革新社区校外辅导站弘扬中国戏曲文化精粹系列活动">学戏之经典   扬国之瑰宝——澄江街道革新社区校 </a><span>08-11</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="传承红色革命基因 弘扬抗美援朝精神">传承红色革命基因 弘扬抗美援朝精神</a><span>08-10</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="宜兴市“弘扬抗疫精神，立志成才报国”主题教育活动集锦（三）">宜兴市“弘扬抗疫精神，立志成才报国”主题教育活 </a><span>08-10</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="工匠与画">工匠与画</a><span>08-06</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="新吴区关工委吹响建强校外教育辅导站集结号">新吴区关工委吹响建强校外教育辅导站集结号</a><span>08-06</span>
+              </router-link>
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-6 wrapper">
+          <h2 class="title">
+            <span style="display: inline-block;vertical-align: top;">
+              <img src="@/assets/img/icon3.gif" />
+            </span>
+            小海燕记者园地
+            <small style="color: #F2D1A2">/XuZhou Juvenile</small>
+            <a class="small text-justify">更多</a>
+          </h2>
+          <ul class="content">
+            <li>
+              <router-link to="/item">
+                ·<a title="滨湖区关工委开展吴成革命传统教育基地引入VR技术调研">
+                滨湖区关工委开展吴成革命传统教育基地引入VR技术
+              </a>
+                <span>08-14</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="山北街道关工委召开上半年工作总结暨下半年工作部署会">山北街道关工委召开上半年工作总结暨下半年工作部 </a><span>08-13</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="徐霞客镇举行“我心中的英雄”老少同台演讲比赛">徐霞客镇举行“我心中的英雄”老少同台演讲比赛</a><span>08-13</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="宜兴市“弘扬抗疫精神，立志成才报国”主题教育活动集锦（四）">宜兴市“弘扬抗疫精神，立志成才报国”主题教育活 </a><span>08-12</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="一堂难忘的德育微课">一堂难忘的德育微课</a><span>08-12</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="暑期显内涵  铜牌诉真情——胡埭关工人连续十年助学“定远娃”">暑期显内涵  铜牌诉真情——胡埭关工人连续十年助 </a><span>08-11</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="学戏之经典   扬国之瑰宝——澄江街道革新社区校外辅导站弘扬中国戏曲文化精粹系列活动">学戏之经典   扬国之瑰宝——澄江街道革新社区校 </a><span>08-11</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="传承红色革命基因 弘扬抗美援朝精神">传承红色革命基因 弘扬抗美援朝精神</a><span>08-10</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="宜兴市“弘扬抗疫精神，立志成才报国”主题教育活动集锦（三）">宜兴市“弘扬抗疫精神，立志成才报国”主题教育活 </a><span>08-10</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="工匠与画">工匠与画</a><span>08-06</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="新吴区关工委吹响建强校外教育辅导站集结号">新吴区关工委吹响建强校外教育辅导站集结号</a><span>08-06</span>
+              </router-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--家庭教育示范中心-->
+    <div class="container-fluid sub-container">
+      <div class="row">
+        <div class="col-md-6 wrapper">
+          <h2 class="title">
+            <span style="display: inline-block;vertical-align: top;">
+              <img src="@/assets/img/icon3.gif" />
+            </span>
+            家庭教育
+            <small style="color: #F2D1A2">/XuZhou Juvenile</small>
+            <a class="small text-justify">更多</a>
+          </h2>
+          <ul class="content">
+            <li>
+              <router-link to="/item">
+                ·<a title="滨湖区关工委开展吴成革命传统教育基地引入VR技术调研">
+                滨湖区关工委开展吴成革命传统教育基地引入VR技术
+              </a>
+                <span>08-14</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="山北街道关工委召开上半年工作总结暨下半年工作部署会">山北街道关工委召开上半年工作总结暨下半年工作部 </a><span>08-13</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="徐霞客镇举行“我心中的英雄”老少同台演讲比赛">徐霞客镇举行“我心中的英雄”老少同台演讲比赛</a><span>08-13</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="宜兴市“弘扬抗疫精神，立志成才报国”主题教育活动集锦（四）">宜兴市“弘扬抗疫精神，立志成才报国”主题教育活 </a><span>08-12</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="一堂难忘的德育微课">一堂难忘的德育微课</a><span>08-12</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="暑期显内涵  铜牌诉真情——胡埭关工人连续十年助学“定远娃”">暑期显内涵  铜牌诉真情——胡埭关工人连续十年助 </a><span>08-11</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="学戏之经典   扬国之瑰宝——澄江街道革新社区校外辅导站弘扬中国戏曲文化精粹系列活动">学戏之经典   扬国之瑰宝——澄江街道革新社区校 </a><span>08-11</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="传承红色革命基因 弘扬抗美援朝精神">传承红色革命基因 弘扬抗美援朝精神</a><span>08-10</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="宜兴市“弘扬抗疫精神，立志成才报国”主题教育活动集锦（三）">宜兴市“弘扬抗疫精神，立志成才报国”主题教育活 </a><span>08-10</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="工匠与画">工匠与画</a><span>08-06</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="新吴区关工委吹响建强校外教育辅导站集结号">新吴区关工委吹响建强校外教育辅导站集结号</a><span>08-06</span>
+              </router-link>
+            </li>
+          </ul>
+        </div>
+        <div class=" col-md-6 wrapper">
+          <h2 class="title">
+            <span style="display: inline-block;vertical-align: top;">
+              <img src="@/assets/img/icon4.gif" />
+            </span>
+            研究与创新
+            <small style="color: #F2D1A2">/XuZhou Juvenile</small>
+            <a class="small text-justify">更多</a>
+          </h2>
+          <ul class="content">
+            <li>
+              <router-link to="/item">
+                ·<a title="滨湖区关工委开展吴成革命传统教育基地引入VR技术调研">
+                滨湖区关工委开展吴成革命传统教育基地引入VR技术
+              </a>
+                <span>08-14</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="山北街道关工委召开上半年工作总结暨下半年工作部署会">山北街道关工委召开上半年工作总结暨下半年工作部 </a><span>08-13</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="徐霞客镇举行“我心中的英雄”老少同台演讲比赛">徐霞客镇举行“我心中的英雄”老少同台演讲比赛</a><span>08-13</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="宜兴市“弘扬抗疫精神，立志成才报国”主题教育活动集锦（四）">宜兴市“弘扬抗疫精神，立志成才报国”主题教育活 </a><span>08-12</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="一堂难忘的德育微课">一堂难忘的德育微课</a><span>08-12</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="暑期显内涵  铜牌诉真情——胡埭关工人连续十年助学“定远娃”">暑期显内涵  铜牌诉真情——胡埭关工人连续十年助 </a><span>08-11</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="学戏之经典   扬国之瑰宝——澄江街道革新社区校外辅导站弘扬中国戏曲文化精粹系列活动">学戏之经典   扬国之瑰宝——澄江街道革新社区校 </a><span>08-11</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="传承红色革命基因 弘扬抗美援朝精神">传承红色革命基因 弘扬抗美援朝精神</a><span>08-10</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="宜兴市“弘扬抗疫精神，立志成才报国”主题教育活动集锦（三）">宜兴市“弘扬抗疫精神，立志成才报国”主题教育活 </a><span>08-10</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="工匠与画">工匠与画</a><span>08-06</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/item">
+                ·<a title="新吴区关工委吹响建强校外教育辅导站集结号">新吴区关工委吹响建强校外教育辅导站集结号</a><span>08-06</span>
+              </router-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--网站轮播图-->
+    <div class="container-fluid" style="padding: 50px 100px 20px 100px;">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <vue-img-slider
+            class=""
+            style="width: 100%;height: 110px;margin:0 auto;"
+            :type="'left'"
+            margin="'20px'"
+            :speed="20"
+            :imgData="newsSliderList"
+            :txtPos="['40%','10%']"
+          ></vue-img-slider>
+        </div>
+      </div>
+    </div>
+    <!--&lt;!&ndash;您身边的IT专家 &ndash;&gt;
     <div id="contactUs" class="container-fuild text-center">
       <div class="container contactUs-container wow slideInUp">
         <h1>您身边的IT专家</h1>
@@ -113,7 +433,7 @@
         </div>
       </div>
     </div>
-    <!--客户评价 -->
+    &lt;!&ndash;客户评价 &ndash;&gt;
     <div id="customer" class="container-fuild">
       <div class="container customer-container">
         <p class="customer-title text-center">客户评价</p>
@@ -158,7 +478,7 @@
         </div>
       </div>
     </div>
-     <!--为什么选择我们 -->
+     &lt;!&ndash;为什么选择我们 &ndash;&gt;
     <div id="whyChooseUs" class="conatiner-fuild">
       <div class="container">
         <div class="whyChooseUs-title text-center">
@@ -188,16 +508,57 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
   </div>
 </template>
 <script>
+import VueImgSlider from "@/components/VueImgSlider"
 import Swiper from "swiper";
 import { WOW } from 'wowjs';
 export default {
   name: "HomePage",
   data() {
     return {
+      newsSliderList: [
+        {
+          img: require("@/assets/img/1.jpg")
+        },
+        {
+          img: require("@/assets/img/1.jpg")
+        },
+        {
+          img: require("@/assets/img/1.jpg")
+        },
+        {
+          img: require("@/assets/img/1.jpg")
+        },
+        {
+          img: require("@/assets/img/2.jpg")
+        },
+        {
+          img: require("@/assets/img/2.jpg")
+        },
+        {
+          img: require("@/assets/img/2.jpg")
+        },
+        {
+          img: require("@/assets/img/2.jpg")
+        },
+        {
+          img: require("@/assets/img/2.jpg")
+        },
+        {
+          img: require("@/assets/img/2.jpg")
+        }
+      ],
+      sliderList: [
+        {
+          img: require("@/assets/img/slider1.png")
+        },
+        {
+          img: require("@/assets/img/slider2.png")
+        },
+      ],
       swiperList: [
         {
           img: require("@/assets/img/banner1.png"),
@@ -389,11 +750,64 @@ export default {
       live: true
     })
     wow.init();
+  },
+  components: {
+    VueImgSlider
   }
 };
 </script>
 <style scoped>
-#bigData .wrapper{
+.middle-swiper {
+  padding: 20px 100px 0px 100px;
+  width: 100%;
+}
+.middle-swiper .banner-swiper {
+  height: 100px;
+  width: 100%;
+}
+.middle-swiper .banner-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.middle-swiper  .banner-swiper .swiper-slide{
+  position: relative;
+}
+.news-swiper {
+  padding: 20px 100px 50px 100px;
+  width: 100%;
+}
+.news-swiper .banner-swiper {
+  height: 100px;
+  width: 100%;
+}
+.news-swiper .banner-swiper .swiper-slide img {
+  width: 142px;
+  height: 104px;
+}
+.news-swiper  .banner-swiper .swiper-slide{
+  position: relative;
+}
+.sub-container {
+  padding: 50px 100px 0px 100px;
+  box-sizing: border-box;
+}
+.sub-container .wrapper {
+  border: #f5f5d5 2px solid;
+  box-shadow: 1px 1px 3px #888888;
+}
+.sub-container .title {
+  color: red;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.sub-container .title a {
+  float: right;
+  color: black;
+}
+.sub-container .title a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: red;
 }
 ui {
   display: block;
@@ -404,11 +818,13 @@ ui {
   margin-inline-end: 0px;
   padding-inline-start: 40px;
 }
-ul , li {
+ul li {
   list-style: none;
   margin-top: 8px;
-  color: #000;
   font-size: medium;
+}
+ul li a {
+  color: #000;
 }
 ul li a:hover {
   text-decoration: none;
@@ -419,15 +835,15 @@ ul li a:link, a:visited {
   text-decoration: none;
   color: #4C4C4C;
 }
+li span {
+  margin-left: 5px;
+  float: right;
+}
 .bigData-title > a  {
   font-size: 15px;
   margin-top: 15px;
   float: right;
   font-weight: 700;
-}
-li span {
-  margin-left: 5px;
-  float: right;
 }
 .bigData-title > a:hover {
   cursor: pointer;
@@ -475,7 +891,7 @@ li span {
 }
 /* 大数据管理系统 */
 #bigData {
-  padding: 100px;
+  padding: 50px 100px 0px 100px;
   transition: all ease 0.6s;
   box-sizing: border-box;
 }
