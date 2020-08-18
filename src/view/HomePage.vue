@@ -24,7 +24,7 @@
     <!-- 大数据管理系统 -->
     <div id="bigData" class="container-fuild">
       <div class="row bigData-container">
-        <div class="col-xs-12 col-sm-12 col-md-6 wow zoomIn">
+        <div class="col-xs-12 col-sm-12 col-md-6 wow zoomIn" style="margin-top: 1%;">
           <img class="img-responsive" src="@/assets/img/boy.jpg" alt="徐州好少年">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 wrapper">
