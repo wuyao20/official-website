@@ -12,12 +12,13 @@
   "dependencies": {
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",
-    "element-ui": "^2.13.2",
+    "babel-polyfill": "^6.26.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@babel/polyfill": "^7.10.4",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
@@ -48,7 +49,7 @@
     "style-loader": "^0.23.1",
     "stylus": "^0.54.8",
     "stylus-loader": "^3.0.2",
-    "swiper": "^4.4.2",
+    "swiper": "^3.4.2",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.3.0",

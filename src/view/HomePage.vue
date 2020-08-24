@@ -4,9 +4,9 @@
     <div id="swiper" class="container-fuild">
       <div class="swiper-container banner-swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" v-for="(item,index) in swiperList" :key="index">
-            <img class="swiper-lazy" :data-src="item.img" alt="轮播图">
-            <div class="swiper-lazy-preloader"></div>
+          <div class="swiper-slide" v-for="item in swiperList" :key="item">
+            <img :src="item.img" alt="轮播图">
+            <!-- <div class="swiper-lazy-preloader"></div> -->
             <div class="swiper-slide-title">
                 <h1>{{item.title}}</h1>
                 <p>{{item.content}}</p>
@@ -104,8 +104,8 @@
       <div class="swiper-container banner-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide" v-for="(item,index) in sliderList" :key="index">
-            <img class="swiper-lazy" :data-src="item.img" alt="轮播图">
-            <div class="swiper-lazy-preloader"></div>
+            <img :src="item.img" alt="轮播图">
+            <!-- <div class="swiper-lazy-preloader"></div> -->
           </div>
         </div>
       </div>
@@ -698,14 +698,15 @@ export default {
   mounted() {
     /* banner-swiper */
     new Swiper(".banner-swiper", {
+      //自动播放
+      autoplay: 3000,
       loop: true, // 循环模式选项
       effect: 'fade',
-      //自动播放
-      autoplay: {
-        delay: 3000,
-        stopOnLastSlide: false,
-        disableOnInteraction: false
-      },
+      // autoplay: {
+      //   delay: 3000,
+      //   stopOnLastSlide: false,
+      //   disableOnInteraction: false
+      // },
       // 如果需要分页器
       pagination: {
         el: ".swiper-pagination",
@@ -717,30 +718,30 @@ export default {
         prevEl: ".swiper-button-prev"
       },
       // 延迟加载
-      lazy: {
-        loadPrevNext: true
-      },
-      observer: true, //修改swiper自己或子元素时，自动初始化swiper
-      observeParents: true //修改swiper的父元素时，自动初始化swiper
+      // lazy: {
+      //   loadPrevNext: true
+      // },
+      // observer: true, //修改swiper自己或子元素时，自动初始化swiper
+      // observeParents: true //修改swiper的父元素时，自动初始化swiper
     });
     /* customer-swiper */
-    new Swiper(".customer-swiper", {
-      loop: true, // 循环模式选项
-      slidesPerView: 3,
-      //自动播放
-      autoplay: {
-        delay: 3000,
-        stopOnLastSlide: false,
-        disableOnInteraction: false
-      },
-      // 如果需要前进后退按钮
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-      observer: true, //修改swiper自己或子元素时，自动初始化swiper
-      observeParents: true //修改swiper的父元素时，自动初始化swiper
-    });
+    // new Swiper(".customer-swiper", {
+    //   loop: true, // 循环模式选项
+    //   slidesPerView: 3,
+    //   //自动播放
+    //   autoplay: {
+    //     delay: 3000,
+    //     stopOnLastSlide: false,
+    //     disableOnInteraction: false
+    //   },
+    //   // 如果需要前进后退按钮
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev"
+    //   },
+    //   observer: true, //修改swiper自己或子元素时，自动初始化swiper
+    //   observeParents: true //修改swiper的父元素时，自动初始化swiper
+    // });
     /* wowjs动画 */
     var wow = new WOW({
       boxClass: 'wow',
